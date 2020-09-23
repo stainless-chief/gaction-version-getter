@@ -1,0 +1,24 @@
+{
+  "name": "gaction-version-getter",
+  "version": "1.0.0",
+  "description": "Small github action for getting AssemblyVersion from .csproj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiefNoir/gaction-version-getter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChiefNoir/gaction-version-getter/issues"
+  },
+  "homepage": "https://github.com/ChiefNoir/gaction-version-getter#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
