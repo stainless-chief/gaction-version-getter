@@ -1,0 +1,11 @@
+name: 'gaction-version-getter'
+description: 'Get AssemblyVersion from .csproj file'
+inputs:
+  projectPath: # path to the .csproj file
+    description: 'path to the .csproj file'
+outputs:
+  projectVersion: # version
+    description: 'AssemblyVersion as a string'
+runs:
+  using: 'node12'
+  main: 'index.js'
