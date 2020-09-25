@@ -1,7 +1,5 @@
 name: 'gaction-version-getter'
 description: 'Get AssemblyVersion from .csproj file'
-icon: 'arrow-down-right'
-color: 'white'
 inputs:
   projectPath: # path to the .csproj file
     description: 'path to the .csproj file'
