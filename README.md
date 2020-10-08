@@ -1,5 +1,6 @@
 # gaction-version-getter
 Small and simple github Action that no one asked for.
+
 It will look for **AssemblyVersion** value in specific  .net core .csproj file.
 
 # Usage
