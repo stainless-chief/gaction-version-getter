@@ -18,4 +18,4 @@ something like that:
 And the variable `${{ steps.get_version.outputs.projectVersion }}` will be something like `0.1.0.2`
 
 # Requirements
-Inside there is a simple regex `'<AssemblyVersion>(.*?)<\/AssemblyVersion>'`: reading file and than matching through the text file, so it will work only with that kinda files
+Inside there is a simple regex `'<AssemblyVersion>(.*?)<\/AssemblyVersion>'`: reading file and than matching through the text file, so it will work only with that kind of files
