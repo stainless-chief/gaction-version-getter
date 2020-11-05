@@ -11,7 +11,13 @@ const main = async () =>
 	const path = core.getInput('projectPath');
 	const content = await fs.readFile(path, 'utf8');
 
-	const regExp = new RegExp('<AssemblyVersion>(.*?)<\/AssemblyVersion>');
+	var regExp;
+	if(path.endsWith(".csproj")) {
+		regExp = new RegExp('<AssemblyVersion>(.*?)<\/AssemblyVersion>');
+	} else if(path.endsWith("package.json")){
+		regExp = new RegExp('"version": "(.*?)"');
+	}
+	
 	const matches = regExp.exec(content);
 
 	core.setOutput('projectVersion', matches[1]);
