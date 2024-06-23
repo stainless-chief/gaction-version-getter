@@ -13,14 +13,14 @@ const main = async () =>
 
 	var regExp;
 	if(path.endsWith(".csproj")) {
-		regExp = new RegExp('<AssemblyVersion>(.*?)<\/AssemblyVersion>');
+		regExp = new RegExp('<(Assembly)?Version>(.*?)<\/(Assembly)?Version>');
 	} else if(path.endsWith("package.json")){
 		regExp = new RegExp('"version": "(.*?)"');
 	}
 	
 	const matches = regExp.exec(content);
 
-	core.setOutput('projectVersion', matches[1]);
+	core.setOutput('projectVersion', matches[2]);
 
 }
 
